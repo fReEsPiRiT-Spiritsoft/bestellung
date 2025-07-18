@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Website Template</title>
+  <title>MampfMobil</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="./scripts/db.js" defer></script>
+  <script src="./scripts/template.js"defer></script>
+  <script src="./scripts/script.js"defer></script>
 </head>
 <body>
   <header>
     <div class="container">
-      <h1>Mein Website-Name</h1>
+      <img src="./img/mampfmobil-tarnsparent.png" alt="">
       <nav>
         <ul>
           <li><a href="#">Start</a></li>
@@ -21,18 +24,18 @@
     </div>
   </header>
   <main>
-    <section>
-      <h2>Willkommen!</h2>
+    <section class="hero">      
+      <h2>Willkommen beim MampfMobil!</h2>
       <p>
         Das ist eine vielseitige, responsive HTML/CSS-Vorlage.
         Passe Titel, Farben, Navigation und Layout einfach für jedes Projekt an.
       </p>
     </section>
-    <section>
-      <h2>Weitere Inhalte</h2>
-      <p>
-        Hier kannst du beliebig weitere Sections einfügen.
-      </p>
+    <section class="Food-Content" id=Food-Content>
+
+      <div class="order" id="order"></div>
+      <div class="card" id="card"></div>
+      
     </section>
   </main>
   <footer>
