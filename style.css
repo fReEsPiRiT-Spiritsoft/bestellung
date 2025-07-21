@@ -163,12 +163,23 @@ section h2 {
     top: 0;;
 }
 #card-sum {
-    background-color: white;
+    background-color: rgb(241, 220, 195);
     border-radius: 12px;
     padding: 3px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius);
+    width: 183px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+    margin-left: 108px;
 }
 #card-sum h3 {
     color: #000000;

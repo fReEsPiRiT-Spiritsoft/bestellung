@@ -12,7 +12,7 @@ function renderCard(orders) {
 function init() {
     renderdishes(dishes);
     renderCard(orders);
-    summaryTemplate(totalAmount)
+    updateCartSummary()
 }
 
 
