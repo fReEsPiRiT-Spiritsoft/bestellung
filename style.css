@@ -160,7 +160,20 @@ section h2 {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     position: sticky;
-    top: 0;
+    top: 0;;
+}
+#card-sum {
+    background-color: white;
+    border-radius: 12px;
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#card-sum h3 {
+    color: #000000;
+    margin-top: 0;
+    text-align: center;
 }
 .card h2 {
     color: #000000;
@@ -179,6 +192,14 @@ section h2 {
     height: auto;
     cursor: pointer;
     margin: 0 5px;
+}
+.order-itemquantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #ececec;
+    border-radius: 12px;
+    margin: 10px;
 }
 footer {
     background: var(--footer-bg);

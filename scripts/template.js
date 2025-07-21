@@ -21,7 +21,7 @@ function cardTemplate(order) {
     return `
         <div class="order-itemquantity">         
             <h3>${order.name}</h3>
-            <p>Preis: ${order.price} €</p>
+            <p>Preis: ${order.price.toFixed(2)} €</p>
             <p>Anzahl: ${order.amount}</p>
             <div class="cart-controls">
             <img src="./icons/plus.png" alt="plus" class="plus" onclick="addToCart(${order.id})">
