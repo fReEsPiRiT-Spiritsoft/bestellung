@@ -49,5 +49,6 @@ function removeFromCart(id) {
 function updateCartSummary() {
     let totalAmount = orders.reduce((sum, order) => sum + order.price * order.amount, 0);
     let cardSumContainer = document.getElementById('card-sum');
-    cardSumContainer.innerHTML = `<h3>Gesamt: ${totalAmount} €</h3>`;
+    totalAmount = totalAmount.toFixed(2)
+    cardSumContainer.innerHTML = `<h3>Gesamt: ${totalAmount} €</h3><button class="btn" id="purchase">Jetzt Bezahlen</button>`;
 }
