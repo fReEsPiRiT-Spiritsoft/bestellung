@@ -9,7 +9,7 @@
   <script src="./scripts/template.js"defer></script>
   <script src="./scripts/script.js"defer></script>
 </head>
-<body>
+<body onload="init()">
   <header>
     <div class="container">
       <img src="./img/mampfmobil-tarnsparent.png" alt="">
@@ -25,24 +25,24 @@
   </header>
   <main>
     <section class="hero">      
-      <h2>Willkommen beim MampfMobil!</h2>
+      <!-- <h2>Willkommen beim MampfMobil!</h2> -->
+       <img src="./img/header.png" alt="">
       <p>
-        Das ist eine vielseitige, responsive HTML/CSS-Vorlage.
-        Passe Titel, Farben, Navigation und Layout einfach für jedes Projekt an.
+        Herzlich Willkommen, beim MampfMobil <br> Bitte wähle deine Bestellerung aus.
       </p>
     </section>
     <section class="Food-Content" id=Food-Content>
 
-      <div class="order" id="order"></div>
-      <div class="card" id="card"></div>
+      <div class="dish" id="dish"></div>
+      <div class="card" id="card">
+      </div>
       
     </section>
   </main>
   <footer>
     <div class="container">
-      &copy; 2025 Dein Name oder Firma. Alle Rechte vorbehalten.
+      &copy; 2025 MampfMobil. Alle Rechte vorbehalten.
     </div>
   </footer>
 </body>
-
 </html>

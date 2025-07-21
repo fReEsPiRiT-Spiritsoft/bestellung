@@ -84,6 +84,15 @@ main {
     flex: 1 0 auto;
     padding: 2.5rem 0 2rem 0;
 }
+.hero img {
+    width: 100%;
+    height: 130px;
+    border-radius: var(--radius);
+}
+.hero p {
+    text-align: center;
+    font-weight: bold;
+}
 
 section {
     background: #fff;
@@ -103,17 +112,47 @@ section h2 {
     gap: 2px;
     flex-wrap: wrap;
 }
-.order {
+.dish-item {
+    flex: 1 0 300px;
+    margin: 1.2rem;
+    background: #f8f9fa;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.dish-item button {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius);
+    width: 183px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+.dish {
     flex: 1;
-    height: 1300px;
+    height: auto;
     background: #c7600c;
     padding: 1.2rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
+.dish img {
+    width: 167px;
+    height: auto;
+    border-radius: var(--radius);
+}
+.amount {
+    width: 35px;
+    margin: 5px;
+}
 .card {
-    flex: 0 0 300px;
-    height: 1300px;
+    flex: 0 0 400px;
+    height: auto;
     background: #c40f0f;
     padding: 1.2rem;
     border-radius: var(--radius);
@@ -121,7 +160,24 @@ section h2 {
     position: sticky;
     top: 0;
 }
-
+.card h2 {
+    color: #000000;
+    margin-top: 0;
+    text-align: center;
+    text-decoration: underline;
+}
+.cart-controls{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 15px
+}
+.cart-controls img{
+    width: 24px;
+    height: auto;
+    cursor: pointer;
+    margin: 0 5px;
+}
 footer {
     background: var(--footer-bg);
     color: #666;
