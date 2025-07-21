@@ -49,7 +49,7 @@ header .container {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    
+
 }
 
 header h1 {
@@ -86,11 +86,13 @@ main {
     padding: 2.5rem 0 2rem 0;
     background-color: rgb(229 131 15 / 23%);
 }
+
 .hero img {
     width: 100%;
     height: 130px;
     border-radius: var(--radius);
 }
+
 .hero p {
     text-align: center;
     font-weight: bold;
@@ -114,6 +116,7 @@ section h2 {
     gap: 2px;
     flex-wrap: wrap;
 }
+
 .dish-item {
     flex: 1 0 300px;
     margin: 1.2rem;
@@ -125,6 +128,7 @@ section h2 {
     flex-direction: column;
     /* align-items: center; */
 }
+
 .dish-item button {
     background: var(--primary);
     color: #fff;
@@ -135,6 +139,7 @@ section h2 {
     cursor: pointer;
     transition: background 0.15s, color 0.15s;
 }
+
 .dish {
     flex: 1;
     height: auto;
@@ -143,15 +148,18 @@ section h2 {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
+
 .dish img {
     width: 167px;
     height: auto;
     border-radius: var(--radius);
 }
+
 .amount {
     width: 35px;
     margin: 5px;
 }
+
 .card {
     flex: 0 0 400px;
     height: auto;
@@ -160,8 +168,10 @@ section h2 {
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     position: sticky;
-    top: 0;;
+    top: 0;
+    ;
 }
+
 #card-sum {
     background-color: rgb(241, 220, 195);
     border-radius: 12px;
@@ -170,6 +180,7 @@ section h2 {
     justify-content: center;
     flex-direction: column;
 }
+
 .btn {
     background: var(--primary);
     color: #fff;
@@ -181,29 +192,55 @@ section h2 {
     transition: background 0.15s, color 0.15s;
     margin-left: 108px;
 }
+
+.local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* background-color: #ececec; */
+    border-radius: 12px;
+    padding: 10px;
+    background-image: url('./img/pizzaria.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 70% 32%;
+}
+
+.local img {
+    width: 100px;
+    height: auto;
+    border-radius: var(--radius);
+}
+
 #card-sum h3 {
     color: #000000;
     margin-top: 0;
     text-align: center;
 }
+
 .card h2 {
     color: #000000;
     margin-top: 0;
     text-align: center;
     text-decoration: underline;
 }
-.cart-controls{
+
+.cart-controls {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin: 15px
 }
-.cart-controls img{
+
+.cart-controls img {
     width: 24px;
     height: auto;
     cursor: pointer;
     margin: 0 5px;
 }
+
 .order-itemquantity {
     display: flex;
     align-items: center;
@@ -212,6 +249,7 @@ section h2 {
     border-radius: 12px;
     margin: 10px;
 }
+
 footer {
     background: var(--footer-bg);
     color: #666;
