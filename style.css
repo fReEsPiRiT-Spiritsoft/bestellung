@@ -5,7 +5,7 @@
     --text: #24292f;
     --header-bg: #ffffff;
     --footer-bg: #ececec;
-    --max-width: 1920px;
+    --max-width: 1620px;
     --radius: 14px;
     --shadow: 0 2px 8px rgba(30, 48, 80, 0.06);
 }
@@ -113,7 +113,7 @@ section h2 {
 
 .Food-Content {
     display: flex;
-    gap: 2px;
+    gap: 5px;
     flex-wrap: wrap;
 }
 
@@ -162,14 +162,14 @@ section h2 {
 
 .card {
     flex: 0 0 400px;
-    height: auto;
     background: #c40f0f;
     padding: 1.2rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     position: sticky;
     top: 0;
-    ;
+    height: fit-content;
+    
 }
 
 #card-sum {
@@ -260,7 +260,53 @@ footer {
     margin-top: 2rem;
     flex-shrink: 0;
 }
-
+.card2 {
+    display: none;
+}
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.backgrounds {
+    background: rgba(197, 86, 22, 0.527);
+    border-radius: 12px;
+}
+.order-btn {
+    background: rgba(229, 133, 15, 0.575);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius);
+    width: 183px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+.order-btn:hover {
+    background: rgba(229, 133, 15, 0.8);
+    color: #fff;
+}
+.cart-overlay h2 {
+    color: #fff;
+    margin-top: 149px;
+    font-size: 30px;
+}
+.closebtn {
+    position: absolute;
+    top: 85px;
+    right: 157px;
+    cursor: pointer;
+    font-size: 53px;
+    color: #e90909;
+}
 /* Responsive Styles */
 @media (max-width: 800px) {
     .container {
@@ -290,4 +336,68 @@ footer {
     main {
         padding: 1.2rem 0 1rem 0;
     }
+}
+
+@media (max-width: 778px) {
+   .card{
+    display: none;
+   }
+   .nav {
+    display: none;
+   }
+   .dish {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+   .dish-item button {
+    width: 146px;
+    margin-top: 10px;
+   }
+    .dish-item {
+     width: 80%
+    }
+}
+@media (max-width: 778px) {
+    .card2 {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        z-index: 1000;
+        background: #ffffff00;
+        /* box-shadow: 0 -2px 8px rgba(0,0,0,0.15); */
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 0;
+    }
+    .card2 button {
+        width: 100%;
+        max-width: 250px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        background: rgba(229, 133, 15, 0.363);
+        font-size: 13px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    .card2 button:hover {
+        background: rgba(229, 133, 15, 0.6);
+    }
+    .card {
+        display: none;
+    }
+}
+
+
+@media (max-width: 425px) {
+.order-itemquantity {
+    display: block;
+    margin-bottom: 5px
+}
 }

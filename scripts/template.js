@@ -5,7 +5,7 @@ function dishTemplate(dish) {
             <h3>${dish.name}</h3>
             <p>${dish.description}</p>
             <span class="price">${dish.price.toFixed(2)} €</span>
-            <input type="number" class="amount" value="1" min="1" max="10" data-id="${dish.id}">
+            <input type="number" class="amount" data-id="${dish.id}" value="1" min="1">
             <button onclick="addToCart(${dish.id})" class="add-to-cart">In den Warenkorb</button>
             <div class="cart-controls">
             <img src="./icons/plus.png" alt="plus" class="plus" onclick="addToCart(${dish.id})">
@@ -31,12 +31,5 @@ function cardTemplate(order) {
         
     `;
 }
-
-// function summaryTemplate(totalAmount) {
-//     return `
-//         <h3>Gesamt: ${totalAmount} €</h3>
-//         <button class="btn" id="purchase">Jetzt Bezahlen</button>
-//     `;
-// }
 
 

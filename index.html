@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MampfMobil</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script src="./scripts/db.js" defer></script>
-  <script src="./scripts/template.js"defer></script>
-  <script src="./scripts/script.js"defer></script>
+  <script src="./scripts/template.js" defer></script>
+  <script src="./scripts/script.js" defer></script>
   <link rel="icon" href="./icons/fav.ico" type="image/x-icon">
-</head>
+  </head>
+
 <body onload="init()">
   <header>
     <div class="container">
       <img src="./img/mampfmobil-tarnsparent.png" alt="">
-      <nav>
+      <nav class="nav">
         <ul>
           <li><a href="#">Start</a></li>
           <li><a href="#">Über uns</a></li>
@@ -25,9 +27,9 @@
     </div>
   </header>
   <main>
-    <section class="hero container">      
+    <section class="hero container">
       <!-- <h2>Willkommen beim MampfMobil!</h2> -->
-       <img src="./img/header.png" alt="">
+      <img src="./img/header.png" alt="">
       <p>
         Herzlich Willkommen, beim MampfMobil <br> Bitte wähle deine Bestellerung aus.
       </p>
@@ -41,8 +43,29 @@
 
       <div class="dish" id="dish"></div>
       <div class="card" id="card">
+        <div class="card-inner"></div>
+        <div id="card-sum"></div>
+      </div>
+      <div class="card2">
+        <button onclick="openMobileCart()" id="cart-mobile-btn">Warenkorb: <span id="cart-mobile-sum">0,00
+            €</span></button>
       </div>
     </section>
+    <section class="cart-overlay" id="cart-overlay" style="display: none;">
+      <span onclick="closeMobileOverlay()" style="position:absolute;top:12px;right:16px;cursor:pointer;font-size:2rem;">&times;</span>
+      <div class="container backgrounds">
+        <h2>Warenkorb</h2>
+        <div id="cart-content"></div>
+        <div id="cart-mobile-sum"></div>
+        <button class="order-btn" onclick="completeOrder()" id="close-cart">
+          <p id="cost"></p> Jetzt Bestellen
+        </button>
+        <!-- <button class="btn" onclick="closeMobileOverlay()" id="close-cart">Schließen</button> -->
+      </div>
+      <div id="cart-overlay" style="display:none;">
+        <div id="cart-content"></div>
+        <div id="cart-confirmation" style="display:none;"></div>
+      </div>
   </main>
   <footer>
     <div class="container">
@@ -50,4 +73,5 @@
     </div>
   </footer>
 </body>
+
 </html>
