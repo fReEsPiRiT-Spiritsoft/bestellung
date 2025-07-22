@@ -3,6 +3,7 @@ function renderdishes(dishes) {
     dishContainer.innerHTML = dishes.map(dishTemplate).join('');
 }
 
+
 function renderCard(orders) {
     let cardInner = document.querySelector('#card .card-inner');
     let cardSumContainer = document.getElementById('card-sum');
@@ -49,6 +50,7 @@ function removeFromCart(id) {
 
 }
 
+
 function updateCartSummary() {
     let totalAmount = orders.reduce((sum, order) => sum + order.price * order.amount, 0);
     let cardSumContainer = document.getElementById('card-sum');
@@ -61,16 +63,19 @@ function updateCartSummary() {
     cardMobileBtn.innerHTML = `<p> ${totalAmount} €</p>`;
 }
 
+
 function openMobileCart() {
     document.getElementById('cart-overlay').style.display = 'block';
     updateCartSummary();
 }
+
 
 function renderMobileCart() {
     let cartContent = document.getElementById('cart-content');
     cartContent.innerHTML = orders.map(cardTemplate).join('');
     updateCartSummary();
 }
+
 
 function closeMobileOverlay() {
     document.getElementById('cart-overlay').style.display = 'none';
@@ -87,3 +92,9 @@ function completeOrder() {
     document.getElementById('cart-overlay').style.display = 'block';
     setTimeout(() => location.reload(), 3000); 
 }
+
+document.getElementById('cart-overlay').addEventListener('click', function(event) {
+    if (event.target === this) {
+        closeMobileOverlay();
+    }
+});

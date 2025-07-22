@@ -28,7 +28,6 @@
   </header>
   <main>
     <section class="hero container">
-      <!-- <h2>Willkommen beim MampfMobil!</h2> -->
       <img src="./img/header.png" alt="">
       <p>
         Herzlich Willkommen, beim MampfMobil <br> Bitte wähle deine Bestellerung aus.
@@ -37,7 +36,8 @@
     <section class="local container">
       <h2>Pizzaria Fittizio</h2>
       <img src="./img/Pizzaria-Fittizio.png" alt="">
-
+      <img class="rating" src="./icons/4of5.png" alt="">
+      
     </section>
     <section class="Food-Content container" id=Food-Content>
 
@@ -60,9 +60,9 @@
         <button class="order-btn" onclick="completeOrder()" id="close-cart">
           <p id="cost"></p> Jetzt Bestellen
         </button>
-        <!-- <button class="btn" onclick="closeMobileOverlay()" id="close-cart">Schließen</button> -->
       </div>
       <div id="cart-overlay" style="display:none;">
+        <span class="closebtn2" onclick="closeMobileOverlay()">&times;</span>
         <div id="cart-content"></div>
         <div id="cart-confirmation" style="display:none;"></div>
       </div>

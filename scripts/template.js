@@ -16,7 +16,6 @@ function dishTemplate(dish) {
 }
 
 
-
 function cardTemplate(order) {
     return `
         <div class="order-itemquantity">         
@@ -31,5 +30,3 @@ function cardTemplate(order) {
         
     `;
 }
-
-
