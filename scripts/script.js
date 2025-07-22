@@ -22,7 +22,6 @@ function addToCart(id) {
     let currentDish = dishes.find(dish => dish.id === id);
     let amountInput = document.querySelector(`input.amount[data-id="${id}"]`);
     let amount = parseInt(amountInput.value);
-
     let existingOrder = orders.find(order => order.id === id);
     if (existingOrder) {
         existingOrder.amount += amount;
@@ -82,6 +81,7 @@ function closeMobileOverlay() {
     
 }
 
+
 function completeOrder() {
     orders = [];
     renderCard(orders);
@@ -92,6 +92,7 @@ function completeOrder() {
     document.getElementById('cart-overlay').style.display = 'block';
     setTimeout(() => location.reload(), 3000); 
 }
+
 
 document.getElementById('cart-overlay').addEventListener('click', function(event) {
     if (event.target === this) {
