@@ -39,6 +39,8 @@ header {
     box-shadow: var(--shadow);
     border-bottom: 1px solid #dde4ec;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 header img {
@@ -61,11 +63,13 @@ header h1 {
     margin: 0;
     letter-spacing: 0.04em;
 }
+
 .navbar {
     display: flex;
     align-items: flex-end;
     gap: 1.2rem;
 }
+
 nav ul {
     list-style: none;
     display: flex;
@@ -176,7 +180,7 @@ section h2 {
     position: sticky;
     top: 0;
     height: fit-content;
-    
+
 }
 
 #card-sum {
@@ -214,6 +218,7 @@ section h2 {
     background-position: center;
     background-position: 70% 32%;
 }
+
 .local h2 {
     color: #000000;
     margin-top: 0;
@@ -274,21 +279,28 @@ footer {
     margin-top: 2rem;
     flex-shrink: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
+
 .card2 {
     display: none;
-    max-height: 60vh;   
-    overflow-y: auto;;
+    max-height: 60vh;
+    overflow-y: auto;
+    ;
 }
+
 .rating {
     height: 100px !important;
     width: auto !important;
 }
+
 .scrollable {
     height: auto;
     max-height: 90vh;
     overflow-y: auto;
 }
+
 .cart-overlay {
     position: fixed;
     top: 0;
@@ -302,10 +314,12 @@ footer {
     justify-content: center;
     text-align: center;
 }
+
 .backgrounds {
     background: rgba(197, 86, 22, 0.527);
     border-radius: 12px;
 }
+
 .order-btn {
     background: rgba(229, 133, 15, 0.575);
     color: #fff;
@@ -316,15 +330,18 @@ footer {
     cursor: pointer;
     transition: background 0.15s, color 0.15s;
 }
+
 .order-btn:hover {
     background: rgba(229, 133, 15, 0.8);
     color: #fff;
 }
+
 .cart-overlay h2 {
     color: #fff;
     margin-top: 14px;
     font-size: 30px;
 }
+
 .closebtn {
     position: absolute;
     top: 85px;
@@ -333,6 +350,7 @@ footer {
     font-size: 53px;
     color: #e90909;
 }
+
 .closebtn2 {
 
     position: absolute;
@@ -375,27 +393,32 @@ footer {
 }
 
 @media (max-width: 778px) {
-   .card{
-    display: none;
-   }
-   .nav {
-    display: none;
-   }
-   .dish {
-    width: 220px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-   }
-   .dish-item button {
-    width: 146px;
-    margin-top: 10px;
-   }
+    .card {
+        display: none;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .dish {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .dish-item button {
+        width: 146px;
+        margin-top: 10px;
+    }
+
     .dish-item {
-     width: 80%
+        width: 80%
     }
 }
+
 @media (max-width: 816px) {
     .card2 {
         display: flex;
@@ -410,8 +433,9 @@ footer {
         align-items: center;
         justify-content: center;
         padding: 1rem 0;
-        
+
     }
+
     .card2 button {
         width: 100%;
         max-width: 250px;
@@ -425,9 +449,11 @@ footer {
         backdrop-filter: blur(3px);
         -webkit-backdrop-filter: blur(3px);
     }
+
     .card2 button:hover {
         background: rgba(229, 133, 15, 0.6);
     }
+
     .card {
         display: none;
     }
@@ -435,8 +461,8 @@ footer {
 
 
 @media (max-width: 425px) {
-.order-itemquantity {
-    display: block;
-    margin-bottom: 5px
-}
+    .order-itemquantity {
+        display: block;
+        margin-bottom: 5px
+    }
 }
