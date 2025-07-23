@@ -21,6 +21,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     background: var(--bg);
     color: var(--text);
@@ -59,7 +60,11 @@ header h1 {
     margin: 0;
     letter-spacing: 0.04em;
 }
-
+.navbar {
+    display: flex;
+    align-items: flex-end;
+    gap: 1.2rem;
+}
 nav ul {
     list-style: none;
     display: flex;

@@ -55,8 +55,8 @@ function updateCartSummary() {
     let cardSumContainer = document.getElementById('card-sum');
     let cartMobileSum = document.getElementById('cart-mobile-sum');
     let cardMobileBtn = document.getElementById('cost');
-    cartMobileSum.textContent = totalAmount.toFixed(2) + ' €';
-    totalAmount = totalAmount.toFixed(2)
+    cartMobileSum.textContent = totalAmount.toFixed(2).replace('.', ',') + ' €';
+    totalAmount = totalAmount.toFixed(2).replace('.', ',')
     cardSumContainer.innerHTML = `<h3>Gesamt: ${totalAmount} €</h3><button onclick="completeOrder()" class="btn" id="purchase">Jetzt Bezahlen</button>`;
     cartMobileSum.innerHTML = `<p> ${totalAmount} €</p>`;
     cardMobileBtn.innerHTML = `<p> ${totalAmount} €</p>`;
