@@ -38,6 +38,7 @@ header {
     background: var(--header-bg);
     box-shadow: var(--shadow);
     border-bottom: 1px solid #dde4ec;
+    width: 100%;
 }
 
 header img {
@@ -272,6 +273,7 @@ footer {
     border-top: 1px solid #dde4ec;
     margin-top: 2rem;
     flex-shrink: 0;
+    width: 100%;
 }
 .card2 {
     display: none;
