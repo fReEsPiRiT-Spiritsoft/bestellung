@@ -405,6 +405,7 @@ footer {
         align-items: center;
         justify-content: center;
         padding: 1rem 0;
+        
     }
     .card2 button {
         width: 100%;
@@ -416,6 +417,8 @@ footer {
         font-size: 13px;
         border-radius: 12px;
         cursor: pointer;
+        backdrop-filter: blur(3px);
+        -webkit-backdrop-filter: blur(3px);
     }
     .card2 button:hover {
         background: rgba(229, 133, 15, 0.6);
